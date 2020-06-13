@@ -7,7 +7,7 @@ numbers = '0123456789'
 plaintext = ""
 shiftvalue = 0
 plaintextlen = 0
-alphalen = 0
+upperlen = 0
 lowerlen = 0
 ciphertext = ''
 
@@ -17,9 +17,8 @@ def inputvalues():
     global plaintext
     global shiftvalue
     global plaintextlen
-    global alphalen
-    global lowerlen
     global upperlen
+    global lowerlen
     plaintext = input('\nPlaintext: ')
     shiftvalue = int(input('\nShift value: '))
     plaintextlen = len(plaintext)
